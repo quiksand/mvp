@@ -2,30 +2,40 @@
   "name": "mvp",
   "version": "1.0.0",
   "description": "mvp project",
+  "repository": "https://github.com/quiksand/mvp.git",
   "main": "index.js",
+  "engines": {
+    "node": "9.3.0"
+  },
   "scripts": {
-    "start": "nodemon ./server/index.js",
+    "start": "node ./server/index.js",
+    "start-dev": "nodemon server/index.js",
     "webpack": "webpack -d --watch ",
     "build": "webpack -p",
+    "postinstall": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "quiksand",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.16.2",
-    "material-ui": "^0.20.0",
-    "mongodb": "^3.0.1",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0"
-  },
-  "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.7",
-    "nodemon": "^1.14.7",
+    "dotenv": "^4.0.0",
+    "express": "^4.16.2",
+    "file-loader": "^1.1.6",
+    "material-ui": "^0.20.0",
+    "mongodb": "^3.0.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "style-loader": "^0.19.1",
+    "typeface-roboto": "0.0.45",
+    "uglifyjs-webpack-plugin": "^1.1.5",
     "webpack": "^3.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.14.7"
   }
 }
