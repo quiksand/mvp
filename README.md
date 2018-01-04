@@ -1,5 +1,4 @@
-#MVP Project for Hack Reactor
+#Dronio
+An open source drone/fleet/asset/whatever managemnet platform with dashboard, statistics, and mapping!
 
-Not even sure what it'll be yet, but just setting up my environment.
-
-Something! Else
+Under development, please come back soon!

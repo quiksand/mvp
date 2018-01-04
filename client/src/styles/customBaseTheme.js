@@ -24,8 +24,8 @@ exports.default = {
   fontFamily: 'Roboto, sans-serif',
   borderRadius: 2,
   palette: {
-    primary1Color: _colors.cyan500,
-    primary2Color: _colors.cyan700,
+    primary1Color: _colors.deepOrange500,
+    primary2Color: _colors.deepOrange700,
     primary3Color: _colors.grey400,
     accent1Color: _colors.pinkA200,
     accent2Color: _colors.grey100,

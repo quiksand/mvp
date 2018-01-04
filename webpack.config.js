@@ -12,7 +12,7 @@ module.exports = {
   },
   plugins: [
     new UglifyJSPlugin(),
-    new BundleAnalyzerPlugin()
+    new BundleAnalyzerPlugin({ openAnalyzer: false })
   ],
   module: {
     rules: [

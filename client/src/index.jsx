@@ -15,12 +15,12 @@ class App extends React.Component {
 
   render() {
     return (
-      <MuiThemeProvider>
-        {/* <Main /> */}
-        <div></div>
+      <MuiThemeProvider muiTheme={MuiThemes.custom}>
+        <Main />
       </MuiThemeProvider>
     );
   }
+
 }
 
 render(<App />, document.getElementById('app'));
