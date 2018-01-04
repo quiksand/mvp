@@ -10,7 +10,7 @@
   "scripts": {
     "start": "node server/index.js",
     "start-dev": "nodemon server/index.js",
-    "webpack": "webpack -d --watch",
+    "webpack": "webpack -d --config webpack.config.dev.js --watch",
     "build": "webpack -p",
     "postinstall": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -32,10 +32,10 @@
     "react-dom": "^16.2.0",
     "style-loader": "^0.19.1",
     "uglifyjs-webpack-plugin": "^1.1.5",
-    "webpack": "^3.10.0"
+    "webpack": "^3.10.0",
+    "webpack-bundle-analyzer": "^2.9.1"
   },
   "devDependencies": {
-    "nodemon": "^1.14.7",
-    "webpack-bundle-analyzer": "^2.9.1"
+    "nodemon": "^1.14.7"
   }
 }
