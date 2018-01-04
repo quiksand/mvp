@@ -1,18 +1,26 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
+// import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import { Main } from './components';
+import { MuiThemes } from './styles'
 
 class App extends React.Component {
 
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {};
   }
 
   render() {
     return (
-      <div>App is correctly mounted on the DOM</div>
+      <MuiThemeProvider>
+        {/* <Main /> */}
+        <div></div>
+      </MuiThemeProvider>
     );
   }
 }
 
-ReactDOM.render(<App />, document.getElementById('app'));
+render(<App />, document.getElementById('app'));

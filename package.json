@@ -8,9 +8,9 @@
     "node": "9.3.0"
   },
   "scripts": {
-    "start": "node ./server/index.js",
+    "start": "node server/index.js",
     "start-dev": "nodemon server/index.js",
-    "webpack": "webpack -d --watch ",
+    "webpack": "webpack -d --watch",
     "build": "webpack -p",
     "postinstall": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -36,6 +36,7 @@
     "webpack": "^3.10.0"
   },
   "devDependencies": {
-    "nodemon": "^1.14.7"
+    "nodemon": "^1.14.7",
+    "webpack-bundle-analyzer": "^2.9.1"
   }
 }
